@@ -59,6 +59,7 @@ class App extends React.Component {
                 <Route exact path="/" component={DashboardPage} />
                 <Route exact path="/login-modal" component={AuthModalPage} />
                 <Route exact path="/buttons" component={ButtonPage} />
+                {/*Add unlock page to path*/}
                 <Route exact path="/unlock" component={UnlockPage} />
                 <Route exact path="/cards" component={CardPage} />
                 <Route exact path="/widgets" component={WidgetPage} />

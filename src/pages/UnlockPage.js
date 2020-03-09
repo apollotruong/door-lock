@@ -57,8 +57,11 @@ class UnlockPage extends React.Component {
                 <h3>
                   Door Status: {doorStatus[0].lockStatus}
                 </h3>
-                <Button color={doorStatus[0].lockStatus ? 'success' : 'danger'} size="lg" onClick={() => {this.onClick(0)}}>
-                    {doorStatus[0].lockStatus ? 'Unlock Door' : 'Lock Door'}
+                <Button outline color="success" size="lg" onClick={() => this.unlockDoor(0)}>
+                    Unlock Door
+                </Button>
+                <Button outline color="danger" size="lg" onClick={() => this.lockDoor(0)}>
+                    Lock Door
                 </Button>
               </CardBody>
             </Card>
